@@ -1,0 +1,296 @@
+/*Configuração geral*/
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    width: 100%;
+}
+
+/*Cabeçalho*/
+.nav-item a:hover{
+    background-color: #000000;
+    border-radius: 10px;
+}    
+
+.container-fluid img{
+    max-width: 75px;
+}
+
+.btn{
+    color: white;
+}
+
+/*Carousel*/
+.carousel-item{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carousel-button{
+    display: none;
+}
+
+.carrosel{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: lightgray;
+}
+
+.carousel-item iframe{
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    padding: 5px;
+}
+
+.titulo h1{
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+/*Em destaque*/
+.menu-dropdown{
+    position: absolute;
+    top: 1%;
+    right: 13.5%;
+}
+
+.dropdown{
+    width: 30px;
+}
+
+.destaque{
+    position: relative;
+    width: 100%;
+    left: 0%;
+}
+
+#telinha{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tela{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.api{
+    margin: 10px 0px;
+    max-width: 210px;
+    padding: 5px;
+}
+
+.api img{
+    height: 300px;
+}
+
+.api p a{
+    text-align: center;
+    max-width: fit-content;
+}
+
+.api a{
+    text-align: center;
+    color: black;
+}
+
+.cards div img{
+    height: 300px;
+}
+
+.cards div p{
+    text-align: center;
+}
+
+.flex img{
+    max-width: col-6;
+}
+
+.linha{
+    position: relative;
+}
+
+#carregar{
+    position: absolute;
+    bottom: 0%;
+    right: 0.5%;
+}
+
+#carregar1{
+    position: absolute;
+    bottom: 0%;
+    right: 0.5%;
+}
+
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.cards{
+    padding: 5px;
+    height: 1000px;
+    align-content: center;
+}
+
+.cards img{
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+/*Últimas avaliações*/
+.card-avaliacoes{
+    max-width: 350px;
+    padding: 5px;
+}
+
+.avaliacoes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.card-avaliacoes img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.ultimas{
+    position: relative;
+    height: 450px;
+    margin-bottom: 10px;
+}
+
+#carregar-mais{
+    position: absolute;
+    right: 0.5%;
+    bottom: 1%;
+}
+
+/*Entrevistas & Bastidores*/
+.movie{
+    max-width: 350px;
+    padding: 5px;
+}
+
+.making-of{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.entrevistas{
+    position: relative;
+    height: 410px;
+}
+
+#filmes{
+    position: absolute;
+    right: 0.5%;
+    bottom: 0%;
+}
+
+.back{
+    height: 70%;
+}
+
+/*Novidades*/
+.grid{
+    display: grid; 
+    grid-template-columns: 3fr 1fr; 
+    grid-gap: 20px;
+    max-width: 800px; 
+    padding: 10px; 
+    position: relative;
+}
+
+.grid{
+    margin-top: 20px !important;
+}
+
+.novidades{
+    grid-column: 1; 
+    grid-row: 1/5; 
+    max-width: 790px;
+}
+
+.novidades img{
+    max-width: 100%;
+    margin: 20px 5px;
+}
+
+.redes a{
+    color: #343a40;
+}
+
+/*Rodapé*/
+.footer-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.creditos{
+    color: white;
+    text-align: center;
+    text-justify: auto;
+}
+
+footer a img{
+    max-width: 50px;
+    right: 1%;
+    top: 10%
+}
+
+.navbar-brand{
+    text-align: center;
+}
+
+/* RESPONSIVIDADE */
+/* DE 768px ATÉ 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .carousel-item iframe{height: 450px;}
+    .img4{display: none;}
+    .menu-dropdown{right: 20%;}
+    .av3{display: none;}
+    .ultimas{height: auto;}
+    .movie2{display: none;}
+    .imagem{display: none;}
+    .nov3{display: none;}
+    .sobre{width: 200px;}
+}
+
+/* ATÉ 767px */
+@media screen and (max-width: 767px){
+    .carousel-item iframe{height: 200px;}
+    .img1{margin: 0 auto;}
+    .img2{display: none;}
+    .img3{display: none;}
+    .img4{display: none;}
+    .menu-dropdown{right: 38.5%;}
+    .av1{display: none;}
+    .av2{margin: 0 auto;}
+    .av3{display: none;}
+    .ultimas{height: 380px;}
+    .movie1{margin: 0 auto;}
+    .movie2{display: none;}
+    .movie3{display: none;}
+    .imagem{display: none;}
+    .nov3{display: none;}
+    .nov2{display: none;}
+    .sobre{width: 200px;}
+}

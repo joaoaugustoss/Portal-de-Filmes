@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Portal de filmes 2</title>
+  </head>
+
+  <body onload="carregaFilmes5()" id="telona">
+    <!--Cabeçalho-->
+    <header class="cabecalho">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu-area">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Lançamentos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Em destaque</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Avaliações</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Entrevistas & Bastidores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Novidades</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <input class="form-control me-2" id="txtPesquisa" type="text" placeholder="Pesquisar filme">
+              <button class="btn btn-outline-light" onclick="pesquisaFilmes()">Pesquisar</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Carrosel-->
+    <div class="carrosel">
+      <div class="titulo">
+        <h1>Lançamentos</h1>
+      </div>
+      <div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators dark">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+
+            <!--Filme 1-->
+            <div class="carousel-item active">
+
+              <div class="row">
+                <div class="col-lg-7">
+                  <iframe class="video" src="https://www.youtube.com/embed/PgrmbRID0eY" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-5 texto">
+                  <span class="titulo"><h3>Vingadores Ultimato</h3></span>
+                  <span class="sinopse"><p><strong>Sinopse: </strong> Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de
+                    lidar com a perda de amigos e entes queridos. Com Tony Stark vagando perdido no espaço sem água e
+                    comida, Steve Rogers e Natasha Romanov lideram a resistência contra o titã louco.</p></span>
+                  <span class="info"><p><strong>Diretor: </strong>Joe Russo, Anthony Russo&nbsp <strong>Roteirista: </strong> Christopher
+                    Markus, Stephen McFelly&nbsp <strong>Estreia: </strong>2019</p></span>
+                  <span class="elenco"><p><strong>Elenco:</strong><br>Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett
+                    Johansson, Jeremy Renner, Don Cheadle, Paul Rudd, Brie Larson, Karen Gillan, Danai Gurira, Bradley
+                    Cooper e Josh Brolin.</p></span>
+                  <p><strong>Avaliação:</strong><br></p>
+                </div>
+              </div>
+            </div>
+
+            <!--Filme 2-->
+            <div class="carousel-item">
+
+              <div class="row">
+                <div class="col-lg-7">
+                  <iframe class="video" src="https://www.youtube.com/embed/XkuStMTguRc" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-5 texto">
+                  <span class="titulo"><h3>Clouds</h3></span>
+                  <span class="sinopse"><p><strong>Sinopse: </strong> O jovem músico Zach Sobiech descobre que tem apenas alguns meses de vida
+                    devido a um câncer terminal. Com pouco tempo, ele corre atrás de seu sonho e grava um álbum, sem saber
+                    que logo se tornaria um fenômeno da internet. Assim, a música dá um novo significado à vida de Zach,
+                    ajudando-o a encontrar a maneira perfeita de se despedir: uma música que será ouvida por todo o mundo.
+                  </p></span>
+                  <span class="info"><p><strong>Diretor: </strong>Justin Baldoni&nbsp <strong>Roteirista: </strong> Laura Sobiech&nbsp
+                    <strong>Estreia: </strong>2020</p></span>
+                  <span class="elenco"><p><strong>Elenco:</strong><br>Fin Argus, Sabrina Carpenter, Madison Iseman, Neve Campbell, Tom Everett, Scott, Lil Rel Howery</p></span>
+                  <p><strong>Avaliação:</strong><br></p>
+                </div>
+              </div>
+            </div>
+
+            <!--Filme 3-->
+            <div class="carousel-item">
+
+              <div class="row">
+                <div class="col-lg-7">
+                  <iframe class="video" src="https://www.youtube.com/embed/xo_7GA4Y-AU" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-5 texto">
+                  <span class="titulo"><h3>Até o Último Homem</h3></span>
+                  <span class="sinopse"><p><strong>Sinopse: </strong> Em Até o Último Homem, durante a Segunda Guerra Mundial, o médico do
+                    exército Desmond T. Doss (Andrew Garfield) se recusa a pegar em uma arma e matar pessoas, porém,
+                    durante a Batalha de Okinawa ele trabalha na ala médica e salva mais de 75 homens, sendo condecorado.
+                    O que faz de Doss o primeiro Opositor Consciente da história norte-americana a receber a Medalha de
+                    Honra do Congresso.</p></span>
+                  <span class="info"><p><strong>Diretor: </strong>Mel Gibson&nbsp <strong>Roteirista: </strong> Robert Schenkkan e Andrew
+                    Knight &nbsp <strong>Estreia: </strong>2016</p></span>
+                  <span class="elenco"><p><strong>Elenco:</strong><br> Andrew Garfield, Vince Vaughn, Sam Worthington, Luke Bracey, Teresa
+                    Palmer, Rachel Griffiths, Richard Roxburgh, Luke Pegler, Richard Pyros, Ben Mingay, Dirani Firass,
+                    Nico Cortez, Michael Sheasby, Goran Kleut, Jacob Warner, Harry Greenwood, Damien Thomlinson, Ben
+                    O'Toole, Benedict Hardie, Robert Morgan, Ori Pfeffer, Milo Gibson, Nathaniel Buzolic, Hugo Weaving e
+                    Ryan Corr.</p></span>
+                  <p><strong>Avaliação:</strong><br></p>
+                </div>
+              </div>
+              <div class="carousel-button">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Conteúdo do portal-->
+    <main class="container main col-12" id="main">
+
+      <div class="row">
+
+        <!--Cards-->
+        <div class="linha">
+          <h3 class="titulo">Filmes Populares</h3>
+          <a class="btn btn-dark" id="carregar" onclick="carregaFilmes10()">+ Carregar mais filmes</a>
+        </div>
+        <div id="telinha">
+                
+        </div> 
+        <div class="linha">
+          <h3 class="titulo">Séries Populares</h3>
+          <a class="btn btn-dark" id="carregar1" onclick="carregaSerie10()">+ Carregar mais filmes</a>
+        </div>
+        <div id="tela">
+
+        </div>
+        <!--Últimas Avaliações-->
+        <section class="ultimas">
+          <div>
+            <h3>Últimas Avaliações</h3>
+          </div>
+          <div class="avaliacoes">
+            <a class="btn btn-dark" id="carregar-mais" href="#" role="button" onclick="carregaFilmes()">+ Carregar mais avaliações</a>
+            <!--Avaliação 1-->
+            <div class="card-avaliacoes av1">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="img/pessoa1.jpg" alt="Perfil 1">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Adalberto - Meu Pai</h5>
+                    <p class="card-text">Filmaço que merece de fato, as indicações ao Oscar. Anthony Hopkins e Olivia
+                      Colman em atuações incríveis. Uma obra que trata com delicadeza, porém de maneira complexa as
+                      relações entre pais e filhos em determinado momento da vida.</p>
+                    <p class="card-text"><small>19/03/2021</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Avaliação 2-->
+            <div class="card-avaliacoes av2">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="img/pessoa3.jpg" alt="Perfil 2">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Paola - Dia do Sim</h5>
+                    <p class="card-text">Super leve, divertido e gostoso de assistir. Talvez seja uma lição para alguns
+                      pais. O elenco faz a diferença, pela sintonia.</p>
+                    <p class="card-text"> <small>08/04/2021</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Avaliação 3-->
+            <div class="card-avaliacoes av3">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="img/pessoa2.jpg" alt="Perfil 3">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Gilberto - Fuja</h5>
+                    <p class="card-text">Gostei demais! O filme é bastante objetivo e sem enrolação, sua dinâmica é tão
+                      boa que o filme passou tão rápido que eu nem percebi. A história prende do início ao fim com cenas
+                      de muita tensão e mistério. Ótimo suspense. Valeu pela expectativa.</p>
+                    <p class="card-text"><small>10/04/2021</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!--Entrevistas e Making of-->
+        <section class="entrevistas">
+          <div>
+            <h3>Entrevistas & Making of</h3>
+          </div>
+          <div class="making-of">
+            <a class="btn btn-dark" id="filmes" href="#" role="button">+ Carregar mais filmes</a>
+            <!--Making of 1-->
+            <div class="movie1">
+              <iframe class="back" src="https://www.youtube.com/embed/6qxQPdG4400" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <h4><strong>Filme: </strong>Sonic</h4>
+              <p><strong>Diretor</strong> Jeff Fowler <br> <strong>Roteiro: </strong> Patrick Casey e Josh Miller <br>
+                <strong>Estreia:</strong> 2020</p>
+            </div>
+
+            <!--Making of 2-->
+            <div class="movie2">
+              <iframe class="back" src="https://www.youtube.com/embed/ypvd2LJCJHg" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <h4><strong>Filme: </strong>1917</h4>
+              <p><strong>Diretor</strong> Sam Mendes <br> <strong>Roteiro: </strong> Krysty Wilson-Cairns <br>
+                <strong>Estreia:</strong> 2019
+              <p>
+            </div>
+
+            <!--Making of 3-->
+            <div class="movie3">
+              <iframe class="back" src="https://www.youtube.com/embed/y6j2I0pGIo0" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <h4><strong>Filme: </strong>Nasce uma Estrela</h4>
+              <p><strong>Diretor</strong> Bradley Cooper <br> <strong>Roteiro: </strong> Eric Roth e Will Fetters <br>
+                <strong>Estreia:</strong> 2018
+              <p>
+            </div>
+          </div>
+        </section>
+
+        <!--Novidades-->
+        <section class="grid">
+          <div class="novidades">
+            <h3>Novidades</h3>
+            <!--Notícia 1-->
+            <div class="nov1">
+              <div class="card mb-3">
+                <div class="row ">
+                  <div class="col-md-4 imagem">
+                    <img src="img/not1.jpeg" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">‘Grey’s Anatomy’: Sarah Drew retorna em imagem oficial da 17ª temporada -
+                        17/04/2021</h5>
+                      <p class="card-text">Através do seu Twitter, a atriz Sarah Drew, que interpreta a Dra. April Kepner
+                        em ‘Grey’s Anatomy‘, divulgou a primeira imagem oficial do retorno na 17ª temporada da série.</p>
+                      <p class="card-text1">
+                        <span class="badge rounded-pill bg-dark">Séries</span>
+                        <span class="badge rounded-pill bg-dark">Grey's Anatomy</span>
+                        <span class="badge rounded-pill bg-dark">Retorno</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Notícia 2-->
+            <div class="nov2">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4 imagem">
+                    <img src="img/not2.jpeg" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Spider-Man: No Way Home | Alfred Molina confirma retorno como Doutor Octopus
+                        e dá detalhes de sua participação - 16/04/2021</h5>
+                      <p class="card-text">Alfred Molina não parece levar o contrato de confidencialidade da Marvel muito
+                        a sério. O ator confirmou sua participação em “Spider Man: No Way Home” e ainda deu detalhes sobre
+                        seu retorno como o Doutor Octopus em entrevista à Variety.</p>
+                      <p class="card-text">
+                        <span class="badge rounded-pill bg-dark">Super-Herói</span>
+                        <span class="badge rounded-pill bg-dark">Homem-Aranha</span>
+                        <span class="badge rounded-pill bg-dark">Marvel</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Notícia 3-->
+            <div class="nov3">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4 imagem">
+                    <img src="img/not3.jpeg" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Chadwick Boseman terá especial da Netflix celebrando seu legado - 13/04/2021
+                      </h5>
+                      <p class="card-text">Uma das grandes perdas do cinema recentemente, o ator Chadwick Boseman irá
+                        ganhar um especial celebrando sua vida e legado artístico pela Netflix. “Chadwick Boseman:
+                        Portrait of an Artist” trará depoimentos de colegas atores e cineastas, prometendo um retrato
+                        emocionante do artista que foi Boseman. </p>
+                      <p class="card-text">
+                        <span class="badge rounded-pill bg-dark">Super-Herói</span>
+                        <span class="badge rounded-pill bg-dark">Pantera Negra</span>
+                        <span class="badge rounded-pill bg-dark">Netflix</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Sobre-->
+          <div class="sobre">
+            <h3>Sobre</h3>
+            <p>Portal desenvolvido pelo aluno João Augusto dos Santos Silva como trabalho da disciplina de Desenvolvimento
+              de Interfaces Web pela Universidade PUC Minas unidade Coração Eucarístico. O portal tem como objetivo a
+              execução do conteúdo estudado ao longo das unidades 1 e 2 da disciplina e está responsivo as diversas
+              viewports existentes. Espero que gostem do meu trabalho!</p>
+          </div>
+
+          <!--Editorial-->
+          <div class="editorial">
+            <h3>Editorial</h3>
+            <p><strong>Redação: </strong>João Augusto <br> <strong>Pesquisa: </strong>João Augusto <br> <strong>Gerente
+                Geral: </strong>João Augusto</p>
+          </div>
+
+          <!--Redes Sociais-->
+          <div class="redes">
+            <h3>Redes Sociais</h3>
+            <p>
+              <a href="https://www.instagram.com/joao.augustoss/" target="blank"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                </svg></a> &nbsp
+              <a href="https://twitter.com/joo_aug" target="blank"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                </svg></a> &nbsp
+              <a href="https://www.facebook.com" target="blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg></a>
+            </p>
+          </div>
+        </section>
+      </div>
+      </div>
+    </main>
+
+    <!--Rodapé-->
+    <footer class="footer bg-dark">
+      <div class="footer-area row">
+        <div class="creditos col-12">
+          Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web - ICEI PUC Minas
+        </div>
+        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"></a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
+
+  </body>
+
+</html>
