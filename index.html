@@ -10,7 +10,7 @@
     <title>Portal de filmes 2</title>
   </head>
 
-  <body onload="carregaFilmes5()" id="telona">
+  <body onload="carregaFilmes5()">
     <!--Cabeçalho-->
     <header class="cabecalho">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -48,21 +48,22 @@
     </header>
 
     <!--Carrosel-->
-    <div class="carrosel">
+    <div class="carrosel" id="car">
       <div class="titulo">
         <h1>Lançamentos</h1>
       </div>
+      <img src="" alt="">
       <div>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators dark">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="car0"
               aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
               aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
               aria-label="Slide 3"></button>
           </div>
-          <div class="carousel-inner">
+          <div class="carousel-inner" id="carrosel">
 
             <!--Filme 1-->
             <div class="carousel-item active">
@@ -185,7 +186,7 @@
             <h3>Últimas Avaliações</h3>
           </div>
           <div class="avaliacoes">
-            <a class="btn btn-dark" id="carregar-mais" href="#" role="button" onclick="carregaFilmes()">+ Carregar mais avaliações</a>
+            <a class="btn btn-dark" id="carregar-mais" href="#" role="button" onclick="carregaCarrosel()">+ Carregar mais avaliações</a>
             <!--Avaliação 1-->
             <div class="card-avaliacoes av1">
               <div class="row">
@@ -288,8 +289,8 @@
         </section>
 
         <!--Novidades-->
-        <section class="grid">
-          <div class="novidades">
+        <section class="grid" id="grid">
+          <div class="novidades" id="novidades">
             <h3>Novidades</h3>
             <!--Notícia 1-->
             <div class="nov1">
@@ -304,11 +305,6 @@
                         17/04/2021</h5>
                       <p class="card-text">Através do seu Twitter, a atriz Sarah Drew, que interpreta a Dra. April Kepner
                         em ‘Grey’s Anatomy‘, divulgou a primeira imagem oficial do retorno na 17ª temporada da série.</p>
-                      <p class="card-text1">
-                        <span class="badge rounded-pill bg-dark">Séries</span>
-                        <span class="badge rounded-pill bg-dark">Grey's Anatomy</span>
-                        <span class="badge rounded-pill bg-dark">Retorno</span>
-                      </p>
                     </div>
                   </div>
                 </div>
