@@ -20,6 +20,14 @@ function carregaFilmes5(){
     xhr.send();
 }
 
+function carregaCarrosel(){
+    xhr = new XMLHttpRequest();
+
+    xhr.open('GET', TMDB_ENDPOINT + '/movie/popular' + '?api_key=' + API_KEY + LANG, true);
+    xhr.onload = exibeCarrosel;
+    xhr.send();
+}
+
 function carregaSerie5(){
     xhr = new XMLHttpRequest();
 
@@ -56,12 +64,14 @@ function exibePesquisa(){
         let sinopse = data.results[i].overview;
         let imagem = IMG_PREFIX + data.results[i].poster_path;
 
-        textoHTML += `<div class="cards col-md-4">
-            <img src="${imagem}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">${nomeFilme}</h5>
-                <p class="card-text">${sinopse}</p>
-                <a href="https://www.themoviedb.org/movie/${data.results[i].id}?language=pt-BR" class="btn btn-primary">Abrir Filme</a>
+        textoHTML += `<div class="cards col-md-3">
+            <div class="row">
+                <img src="${imagem}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">${nomeFilme}</h5>
+                    <p class="card-text">${sinopse}</p>
+                    <a href="https://www.themoviedb.org/movie/${data.results[i].id}?language=pt-BR" target="blank" class="btn btn-primary">Abrir Filme</a>
+                </div>
             </div>
         </div>`
     }
@@ -78,11 +88,10 @@ function exibeSerie10(){
         let sinopse = data.results[i].overview;
         let imagem = IMG_PREFIX + data.results[i].poster_path;
 
-        textoHTML += `<div class="api">
+        textoHTML += `<div class="api col-md-3">
         <div class="row">
             <span class="cartaz"><img src="${imagem}" alt="Cartaz"></span>
             <span class="titulo"><p><a href="https://www.themoviedb.org/tv/${data.results[i].id}?language=pt-BR" target="blank">${nomeFilme}</a></p></span>
-            <!--<span class="sinopse"><p>${sinopse}</p></span>-->
         </div>
       </div>`
     }
@@ -99,11 +108,10 @@ function exibeSerie5(){
         let sinopse = data.results[i].overview;
         let imagem = IMG_PREFIX + data.results[i].poster_path;
 
-        textoHTML += `<div class="api">
+        textoHTML += `<div class="api serie${i} col-md-3">
         <div class="row">
             <span class="cartaz"><img src="${imagem}" alt="Cartaz"></span>
             <span class="titulo"><p><a href="https://www.themoviedb.org/tv/${data.results[i].id}?language=pt-BR" target="blank">${nomeFilme}</a></p></span>
-            <!--<span class="sinopse"><p>${sinopse}</p></span>-->
         </div>
       </div>`
     }
@@ -120,11 +128,10 @@ function exibeFilmes10(){
         let sinopse = data.results[i].overview;
         let imagem = IMG_PREFIX + data.results[i].poster_path;
 
-        textoHTML += `<div class="api">
+        textoHTML += `<div class="api col-md-3">
         <div class="row">
             <span class="cartaz"><img src="${imagem}" alt="Cartaz"></span>
             <span class="titulo"><p><a href="https://www.themoviedb.org/movie/${data.results[i].id}?language=pt-BR" target="blank">${nomeFilme}</a></p></span>
-            <!--<span class="sinopse"><p>${sinopse}</p></span>-->
         </div>
       </div>`
     }
@@ -141,11 +148,10 @@ function exibeFilmes5(){
         let sinopse = data.results[i].overview;
         let imagem = IMG_PREFIX + data.results[i].poster_path;
 
-        textoHTML += `<div class="api">
+        textoHTML += `<div class="api filme${i} col-md-3">
         <div class="row">
             <span class="cartaz"><img src="${imagem}" alt="Cartaz"></span>
             <span class="titulo"><p><a href="https://www.themoviedb.org/movie/${data.results[i].id}?language=pt-BR" target="blank">${nomeFilme}</a></p></span>
-            <!--<span class="sinopse"><p>${sinopse}</p></span>-->
         </div>
       </div>`
     }
