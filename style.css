@@ -75,6 +75,10 @@ main{
     align-items: center;
 }
 
+.telinha a{
+    text-align: center;
+}
+
 #tela{
     display: flex;
     flex-wrap: wrap;
@@ -82,10 +86,15 @@ main{
     align-items: center;
 }
 
+.titulo{
+    margin: 0 auto;
+}
+
 .api{
     margin: 10px 0px;
     max-width: 210px;
     padding: 5px;
+    height: 350px;
 }
 
 .api img{
@@ -116,6 +125,7 @@ main{
 
 .linha{
     position: relative;
+    padding: 5px;
 }
 
 #carregar{
@@ -134,20 +144,21 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     padding: 5px;
 }
 
 .cards{
-    padding: 5px;
-    height: 1000px;
     align-content: center;
+    margin: 5px;
 }
 
 .cards img{
     width: 200px;
     margin: auto;
     text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
 }
 
 /*Últimas avaliações*/
@@ -264,7 +275,10 @@ footer a img{
 /* DE 768px ATÉ 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px){
     .carousel-item iframe{height: 450px;}
-    .img4{display: none;}
+    .filme3{display: none;}
+    .filme4{display: none;}
+    .serie3{display: none;}
+    .serie4{display: none;}
     .menu-dropdown{right: 20%;}
     .av3{display: none;}
     .ultimas{height: auto;}
@@ -277,10 +291,16 @@ footer a img{
 /* ATÉ 767px */
 @media screen and (max-width: 767px){
     .carousel-item iframe{height: 200px;}
-    .img1{margin: 0 auto;}
-    .img2{display: none;}
-    .img3{display: none;}
-    .img4{display: none;}
+    .filme0{margin: 0 auto;}
+    .filme1{margin: 0 auto;}
+    .filme2{display: none;}
+    .filme3{display: none;}
+    .filme4{display: none;}
+    .serie0{margin: 0 auto;}
+    .serie1{margin: 0 auto;}
+    .serie2{display: none;}
+    .serie3{display: none;}
+    .serie4{display: none;}
     .menu-dropdown{right: 38.5%;}
     .av1{display: none;}
     .av2{margin: 0 auto;}
